@@ -48,6 +48,7 @@ export function Schedule({
         />
 
         {/* Day tabs */}
+        {/* 
         <div className="flex flex-wrap gap-[2px] bg-black border-2 border-black mb-8 w-fit">
           {days.map((d, i) => {
             const isActive = i === active;
@@ -75,14 +76,16 @@ export function Schedule({
             );
           })}
         </div>
+        */}
 
-        {timezone ? (
+        {/*{timezone ? (
           <div className="text-xs tracking-widest uppercase opacity-50 mb-6">
             All times in {timezone}
           </div>
-        ) : null}
+        ) : null}*/}
 
         {/* Events timeline */}
+        {/*
         <div className="border-2 border-black">
           {day.events.map((ev, i) => {
             const type = (ev.type ?? "activity") as ScheduleEventType;
@@ -138,6 +141,11 @@ export function Schedule({
             );
           })}
         </div>
+        */}
+        <div className="text-center text-3xl sm:text-5xl font-bold text-black py-20" style={{ fontFamily: "var(--font-sora), 'Sora', sans-serif" }}>
+          Schedule will be announced soon.
+        </div>
+   
       </div>
     </section>
   );

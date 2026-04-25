@@ -1,5 +1,5 @@
 ---
-title: "Schedule"
+# title: "Schedule"
 timezone: "EST"
 # Edit this entire structure to change the schedule. Days are ordered
 # as they appear here. Each event has a time, title, and optional

@@ -1,6 +1,6 @@
 ---
 title: "Questions"
-subtitle: "Answers to the things you're probably wondering."
+
 # Each `## Question` heading below becomes one FAQ item.
 # The body under it (until the next `## `) is the answer.
 # Reorder, add, or remove questions by editing this file.
@@ -8,54 +8,29 @@ subtitle: "Answers to the things you're probably wondering."
 
 ## What is a hackathon?
 
-A hackathon is a weekend-long invention marathon. You form a team,
-pick a problem, and try to build something — anything — in 48 hours.
-There's free food, free swag, mentors, workshops, and usually a
-surprising amount of sleep deprivation.
-
-You do **not** need to be a "hacker." You just need to be curious.
+ A hackathon is an event where people engage in rapid and collaborative engineering over a relatively short period of time.
 
 ## Who can attend?
 
-Any high school student in grades 9–12 with a valid student ID. You
-do **not** need to live in Virginia — hackers from across the DMV and
-beyond are welcome. We especially encourage:
-
-- First-time hackers
-- Designers and non-coders
-- People who think they're "not technical enough"
-
-If you're on the fence — come. You'll fit in.
+Any high school student in grades 9–12!
 
 ## How much does it cost?
 
-**$0.** TillyHacks is completely free for all attendees. Food, swag,
-workshops, and prizes are all covered by our sponsors. We also offer
-travel reimbursements for students traveling from further away —
-details in the registration form.
+TillyHacks is free!
 
 ## Do I need a team?
 
-Nope. You can come solo or with a team of up to **4 people**. We'll
-run a team-formation mixer at the start of the event to help solo
-hackers find their people. Most of the best teams are formed on-site.
+No, but working solo is much harder. We reccomend you work in upto teams of 4 people.
 
-## What should I bring?
+## What do I need?
 
 - A laptop and charger
-- A student ID
-- Toiletries and a change of clothes
-- A sleeping bag or blanket (optional — there are quiet rooms)
-- Your favorite snack
 
-Don't bring: large amounts of cash, anything fragile, or anything
-that can't clear reasonable venue security.
+## What if I dont know how to code?
 
-## Is there a code of conduct?
+No coding experience is needed. Come learn, join a team, and build something cool. Hackathons are for everyone. 
 
-Yes. TillyHacks follows the [MLH Code of Conduct](mlhCodeOfConduct).
-Harassment, discrimination, and general bad-vibe behavior will get
-you removed from the event. Be kind. Be curious. Help each other.
 
-If you experience or witness anything that makes you uncomfortable,
-reach out to any organizer (we wear purple lanyards) or email us.
+## Can we stay overnight?
+
+Attendees will be required to leave campus and return in the mornings, hacking can continue while not on campus.

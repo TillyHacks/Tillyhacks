@@ -8,6 +8,6 @@ primaryCta:
   link: "register"
 secondaryCta:
   label: "Become a sponsor"
-  link: "tillyhacks.org/prospectus.pdf"
+  link: "/prospectus.pdf"
 ---
 

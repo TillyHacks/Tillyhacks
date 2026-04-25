@@ -15,10 +15,7 @@ export function Footer({ eventDates, socials, email }: Props) {
         <div className="grid md:grid-cols-[2fr_1fr_1fr] gap-10">
           <div>
             <Wordmark size="lg" light />
-            <p className="mt-6 text-white/70 max-w-md">
-              A 48-hour hackathon for builders, dreamers, and
-              first-timers. Run by students, for students.
-            </p>
+          
             <p className="mt-4 text-sm text-white/50 tracking-widest uppercase">
               {eventDates}
             </p>
@@ -39,11 +36,23 @@ export function Footer({ eventDates, socials, email }: Props) {
                   >
                     {s.label}
                   </a>
+                  
                 </li>
+                
               ))}
+               <a
+              href="https://hcb.hackclub.com/donations/start/tillyhacks"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#B024F9] transition-colors"
+            >
+              Donate
+            </a>
             </ul>
+         
           </div>
-
+          
+     
           <div>
             <div className="text-xs tracking-[0.3em] uppercase text-white/40 mb-4">
               Contact
@@ -59,10 +68,8 @@ export function Footer({ eventDates, socials, email }: Props) {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-white/40">
           <span>
-            © {new Date().getFullYear()} TillyHacks. Built with too much
-            coffee.
+            © {new Date().getFullYear()} TillyHacks.
           </span>
-          <span>Brand Standards v1.0</span>
         </div>
       </div>
     </footer>
