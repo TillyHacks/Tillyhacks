@@ -20,7 +20,7 @@ TillyHacks is free!
 
 ## Do I need a team?
 
-No, but working solo is much harder. We reccomend you work in upto teams of 4 people.
+No, but working solo is much harder. We recommend you work in teams of atleast 2 people.
 
 ## What do I need?
 
