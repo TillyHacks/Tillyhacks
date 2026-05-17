@@ -2,7 +2,7 @@
 title: "TillyHacks 2026"
 description: "A high school hackathon in Chantilly, VA."
 eventName: "TillyHacks"
-eventDates: "May 29–31, 2026"
+eventDates: "May 30, 2026"
 eventLocation: "Chantilly, VA"
 # Links live in links.json — the only "hard" thing to change.
 ---

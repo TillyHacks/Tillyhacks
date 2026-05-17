@@ -1,0 +1,11 @@
+{
+  "sessionId": "ducky-1778054459592-775cbd0b",
+  "projectDir": "/mnt/c/Users/imalw/Downloads/hackthetilly/tillyhacks",
+  "startedAt": "2026-05-06T08:00:59.592Z",
+  "status": "stopped",
+  "daemonPid": 9665,
+  "lastHeartbeat": "2026-05-06T08:05:53.110Z",
+  "platform": "linux",
+  "node": "v22.22.2",
+  "endedAt": "2026-05-06T08:05:53.210Z"
+}

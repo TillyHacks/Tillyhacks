@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "sessionId": "ducky-1778054459592-775cbd0b",
+    "sessionStartTime": "2026-05-06T08:00:59.592Z",
+    "sessionEndTime": "2026-05-06T08:05:53.210Z",
+    "durationSeconds": 294,
+    "projectDirectory": "/mnt/c/Users/imalw/Downloads/hackthetilly/tillyhacks",
+    "reportGeneratedAt": "2026-05-06T08:05:53.222Z"
+  },
+  "tracking": {
+    "aiPrompts": {
+      "total": 1,
+      "byTool": {
+        "codex": 1
+      },
+      "bySource": {
+        "codex_history": 1
+      },
+      "promptChars": {
+        "min": 119,
+        "max": 119,
+        "average": 119
+      },
+      "estimatedPromptTokens": 30,
+      "distinctSessionCount": 1,
+      "sessions": [
+        {
+          "sessionIdHash": "9323caf4ab39154e",
+          "tool": "codex",
+          "firstSeen": "2026-05-06T08:01:37.000Z",
+          "lastSeen": "2026-05-06T08:01:37.000Z",
+          "promptCount": 1,
+          "estimatedPromptTokens": 30,
+          "runtimeSeconds": 0
+        }
+      ]
+    },
+    "sessionShape": {
+      "maxConcurrentPromptWindows": 1,
+      "multiAgentIndicators": {
+        "multiplePromptSessions": false,
+        "concurrentPromptWindows": false,
+        "multipleAiProcessTools": false,
+        "highPromptVolume": false
+      }
+    },
+    "aiProcesses": {
+      "sampleCount": 135,
+      "activeSampleCount": 135,
+      "activeSecondsByTool": {
+        "codex": 270
+      },
+      "maxConcurrentProcesses": 5,
+      "toolsObserved": [
+        "codex"
+      ]
+    },
+    "artifactUpdates": {
+      "total": 0,
+      "byTool": {},
+      "byScope": {}
+    },
+    "projectFiles": {
+      "changeCount": 11,
+      "distinctFilesChanged": 8,
+      "byType": {
+        "updated": 9,
+        "deleted": 1,
+        "created": 1
+      },
+      "byExtension": {
+        "css": 1,
+        "tsx": 10
+      },
+      "bursts": [
+        {
+          "start": "2026-05-06T08:04:09.346Z",
+          "end": "2026-05-06T08:05:39.868Z",
+          "durationSeconds": 91,
+          "changeCount": 11,
+          "distinctFiles": 8,
+          "sizeDelta": 12791,
+          "nearestAiSignal": {
+            "type": "process_sample",
+            "tool": "codex",
+            "ts": "2026-05-06T08:04:08.930Z",
+            "secondsAway": 0
+          },
+          "nearAiSignal": true
+        }
+      ]
+    },
+    "correlations": {
+      "windowSeconds": 120,
+      "fileChangesNearAiSignal": 11,
+      "burstsNearAiSignal": 1
+    },
+    "inference": {
+      "confidence": "medium",
+      "scorePercent": 52
+    }
+  }
+}

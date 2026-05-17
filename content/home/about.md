@@ -8,4 +8,4 @@ stats:
 #     value: "$500"
 ---
 
-TillyHacks is a 40-hour high school hackathon in the DMV where students build, learn, and ship projects from scratch in a fast-paced, collaborative environment.
+TillyHacks is a 12-hour high school hackathon in the DMV where students build, learn, and ship projects from scratch in a fast-paced, collaborative environment.

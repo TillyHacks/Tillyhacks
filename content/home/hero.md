@@ -1,5 +1,5 @@
 ---
-eyebrow: "48 hours · May 29-31, 2026"
+eyebrow: "12 hours · May 30, 2026"
 titleLeft: "Tilly"
 titleRight: "Hacks"
 # Primary and secondary CTAs reference keys in content/links.json.
