@@ -112,14 +112,15 @@ export interface TracksData {
 }
 export const getTracks = () => readMarkdownDoc<TracksData>("home/tracks.md");
 
-export interface SponsorsTierEntry {
-  tier: string;
-  sponsors: { name: string; link?: string }[];
+export interface SponsorEntry {
+  name: string;
+  link?: string;
+  image?: string;
 }
 export interface SponsorsData {
   eyebrow: string;
   title: string;
-  tiers: SponsorsTierEntry[];
+  sponsors: SponsorEntry[];
 }
 export const getSponsors = () =>
   readMarkdownDoc<SponsorsData>("home/sponsors.md");

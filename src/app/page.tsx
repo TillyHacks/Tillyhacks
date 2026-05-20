@@ -84,16 +84,15 @@ export default async function Home() {
           bodyHtml={tracks.html}
           tracks={tracks.data.tracks}
         />
+        */}
 
-        {/* Sponsors section hidden for now. Re-enable by uncommenting:
         <Sponsors
           eyebrow={sponsors.data.eyebrow}
           title={sponsors.data.title}
           bodyHtml={sponsors.html}
-          tiers={sponsors.data.tiers}
+          sponsors={sponsors.data.sponsors}
           sponsorHref={sponsorHref}
         />
-        */}
 
         <Faq
           title={faq.title}

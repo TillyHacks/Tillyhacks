@@ -1,67 +1,80 @@
-import type { SponsorsTierEntry } from "@/lib/content";
+import type { SponsorEntry } from "@/lib/content";
 import { SectionHeader } from "./SectionHeader";
 
 type Props = {
   eyebrow: string;
   title: string;
   bodyHtml: string;
-  tiers: SponsorsTierEntry[];
+  sponsors: SponsorEntry[];
   sponsorHref: string;
 };
+
+function SponsorTile({ sponsor }: { sponsor: SponsorEntry }) {
+  const tile = (
+    <div className="bg-white aspect-[5/3] sm:aspect-[3/2] flex items-center justify-center p-2 sm:p-3 h-full min-h-[7.5rem] sm:min-h-[9rem] md:min-h-[10.5rem]">
+      {sponsor.image ? (
+        <img
+          src={`/sponsor-images/${sponsor.image}`}
+          alt={sponsor.name}
+          className="h-[88%] w-[92%] object-contain transition-transform duration-200 group-hover:scale-[1.04]"
+        />
+      ) : (
+        <span
+          className="text-lg font-bold text-center transition-colors duration-200 group-hover:text-[#B024F9]"
+          style={{ fontFamily: "var(--font-sora), 'Sora', sans-serif" }}
+        >
+          {sponsor.name}
+        </span>
+      )}
+    </div>
+  );
+
+  if (sponsor.link) {
+    return (
+      <a
+        href={sponsor.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block h-full"
+      >
+        {tile}
+      </a>
+    );
+  }
+
+  return tile;
+}
 
 export function Sponsors({
   eyebrow,
   title,
   bodyHtml,
-  tiers,
+  sponsors,
   sponsorHref,
 }: Props) {
+  const topRow = sponsors.slice(0, 3);
+  const bottomRow = sponsors.slice(3);
+
   return (
     <section id="sponsors" className="py-24 sm:py-32">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <SectionHeader eyebrow={eyebrow} title={title} />
 
-        <div className="space-y-10">
-          {tiers.map((tier) => (
-            <div key={tier.tier}>
-              <div className="flex items-baseline gap-3 mb-4">
-                <span
-                  className="text-xs tracking-[0.3em] uppercase"
-                  style={{ color: "#B024F9" }}
-                >
-                  {tier.tier}
-                </span>
-                <div className="flex-1 h-px bg-black/20" />
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[2px] bg-black border-2 border-black">
-                {tier.sponsors.map((s) => {
-                  const content = (
-                    <div className="bg-white aspect-[3/2] flex items-center justify-center p-6 hover:bg-[#B024F9] hover:text-white transition-colors">
-                      <span
-                        className="text-lg font-bold text-center"
-                        style={{
-                          fontFamily:
-                            "var(--font-sora), 'Sora', sans-serif",
-                        }}
-                      >
-                        {s.name}
-                      </span>
-                    </div>
-                  );
-                  return s.link ? (
-                    <a
-                      key={s.name}
-                      href={s.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {content}
-                    </a>
-                  ) : (
-                    <div key={s.name}>{content}</div>
-                  );
-                })}
-              </div>
+        <div className="w-full grid grid-cols-6 gap-3 sm:gap-4">
+          {topRow.map((s) => (
+            <div
+              key={s.name}
+              className="group col-span-2 border-2 border-black transition-[border-color,box-shadow] duration-200 hover:border-[#B024F9] hover:shadow-[4px_4px_0_#B024F9]"
+            >
+              <SponsorTile sponsor={s} />
+            </div>
+          ))}
+          {bottomRow.map((s, i) => (
+            <div
+              key={s.name}
+              className={`group col-span-2 border-2 border-black transition-[border-color,box-shadow] duration-200 hover:border-[#B024F9] hover:shadow-[4px_4px_0_#B024F9] ${i === 0 ? "col-start-2" : "col-start-4"}`}
+            >
+              <SponsorTile sponsor={s} />
             </div>
           ))}
         </div>
