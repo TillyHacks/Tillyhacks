@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/mlh",
+      "destination": "https://events.mlh.com/events/14313-tillyhacks",
+      "permanent": true
+    }
+  ]
+}
