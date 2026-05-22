@@ -30,7 +30,3 @@ No, but working solo is much harder. We recommend you work in teams of atleast 2
 
 No coding experience is needed. Come learn, join a team, and build something cool. Hackathons are for everyone. 
 
-# Six seven
-
-djiojdeojo
-
