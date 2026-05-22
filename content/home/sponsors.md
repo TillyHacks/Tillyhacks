@@ -17,8 +17,10 @@ sponsors:
   - name: "Big Buns Good Burgers"
     image: images.png
     link: https://www.eatbigbuns.com
+  - name: "Code Crafters"
+    image: codecrafters.png
+    link: https://www.codecrafters.io
 ---
 
 TillyHacks is powered by companies who care about the next generation
 of builders. Want your logo here?
-W

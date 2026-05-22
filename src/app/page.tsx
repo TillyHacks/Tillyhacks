@@ -52,6 +52,7 @@ export default async function Home() {
           eyebrow={hero.data.eyebrow}
           titleLeft={hero.data.titleLeft}
           titleRight={hero.data.titleRight}
+          subtitle={hero.data.subtitle}
           primary={{
             label: hero.data.primaryCta.label,
             href: resolveLink(hero.data.primaryCta.link, links),

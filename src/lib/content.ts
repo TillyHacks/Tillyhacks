@@ -88,6 +88,7 @@ export interface HeroData {
   eyebrow: string;
   titleLeft: string;
   titleRight: string;
+  subtitle?: string;
   primaryCta: { label: string; link: string };
   secondaryCta: { label: string; link: string };
 }

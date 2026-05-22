@@ -11,12 +11,12 @@ type Props = {
 
 function SponsorTile({ sponsor }: { sponsor: SponsorEntry }) {
   const tile = (
-    <div className="bg-white aspect-[5/3] sm:aspect-[3/2] flex items-center justify-center p-2 sm:p-3 h-full min-h-[7.5rem] sm:min-h-[9rem] md:min-h-[10.5rem]">
+    <div className="flex h-full min-h-[6.5rem] items-center justify-center bg-white px-4 py-3 sm:min-h-[8.5rem] sm:px-5 sm:py-4 md:min-h-[10rem] md:px-6">
       {sponsor.image ? (
         <img
           src={`/sponsor-images/${sponsor.image}`}
           alt={sponsor.name}
-          className="h-[88%] w-[92%] object-contain transition-transform duration-200 group-hover:scale-[1.04]"
+          className="h-auto max-h-[3.75rem] w-full object-contain transition-transform duration-200 group-hover:scale-[1.04] sm:max-h-[4.75rem] md:max-h-[5.5rem]"
         />
       ) : (
         <span
@@ -52,27 +52,16 @@ export function Sponsors({
   sponsors,
   sponsorHref,
 }: Props) {
-  const topRow = sponsors.slice(0, 3);
-  const bottomRow = sponsors.slice(3);
-
   return (
     <section id="sponsors" className="py-24 sm:py-32">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <SectionHeader eyebrow={eyebrow} title={title} />
 
-        <div className="w-full grid grid-cols-6 gap-3 sm:gap-4">
-          {topRow.map((s) => (
+        <div className="grid w-full grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+          {sponsors.map((s) => (
             <div
               key={s.name}
-              className="group col-span-2 border-2 border-black transition-[border-color,box-shadow] duration-200 hover:border-[#B024F9] hover:shadow-[4px_4px_0_#B024F9]"
-            >
-              <SponsorTile sponsor={s} />
-            </div>
-          ))}
-          {bottomRow.map((s, i) => (
-            <div
-              key={s.name}
-              className={`group col-span-2 border-2 border-black transition-[border-color,box-shadow] duration-200 hover:border-[#B024F9] hover:shadow-[4px_4px_0_#B024F9] ${i === 0 ? "col-start-2" : "col-start-4"}`}
+              className="group border-2 border-black transition-[border-color,box-shadow] duration-200 hover:border-[#B024F9] hover:shadow-[4px_4px_0_#B024F9]"
             >
               <SponsorTile sponsor={s} />
             </div>

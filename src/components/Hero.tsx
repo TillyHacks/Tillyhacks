@@ -2,6 +2,7 @@ type Props = {
   eyebrow: string;
   titleLeft: string;
   titleRight: string;
+  subtitle?: string;
   primary: { label: string; href: string };
   secondary: { label: string; href: string };
   eventLocation: string;
@@ -11,6 +12,7 @@ export function Hero({
   eyebrow,
   titleLeft,
   titleRight,
+  subtitle,
   primary,
   secondary,
   eventLocation,
@@ -42,6 +44,15 @@ export function Hero({
           <span style={{ color: "#B024F9" }}>{titleLeft}</span>
           <span className="text-black">{titleRight}</span>
         </h1>
+
+        {subtitle ? (
+          <p
+            className="mt-4 text-sm font-bold uppercase tracking-[0.18em] text-black sm:mt-5 sm:text-base"
+            style={{ fontFamily: "var(--font-sora), 'Sora', sans-serif" }}
+          >
+            {subtitle}
+          </p>
+        ) : null}
 
         <div className="mt-10 flex flex-col sm:flex-row gap-3">
           <a
