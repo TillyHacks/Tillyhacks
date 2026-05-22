@@ -47,7 +47,7 @@ export function Hero({
 
         {subtitle ? (
           <p
-            className="mt-4 text-sm font-bold uppercase tracking-[0.18em] text-black sm:mt-5 sm:text-base"
+            className="mt-4 text-sm font-bold tracking-[0.08em] text-black sm:mt-5 sm:text-base"
             style={{ fontFamily: "var(--font-sora), 'Sora', sans-serif" }}
           >
             {subtitle}
